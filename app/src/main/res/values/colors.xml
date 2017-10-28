@@ -14,4 +14,9 @@
     <color name="myDarkGray">#737373</color>
     <color name="myLighterGreen">#bde2b6</color>
     <color name="myWhite">#ffffff</color>
+    <color name="mySplashGreen">#24491d</color>
+    <color name="mySplashRed">#5f0c07</color>
+    <color name="mySplashBlue">#09415d</color>
+    <color name="mySplashYellow">#635d03</color>
+    <color name="splashColor">#4d4d4d</color>
 </resources>

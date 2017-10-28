@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:launchMode="singleTask"
+    tools:context="app.simone.shared.main.SplashscreenActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/splash_fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/splash_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/splashbutton_vs_cpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/mySplashGreen"
+                    android:textColor="@color/myMainTextColor">
+
+                </Button>
+
+
+                <Button
+                    android:id="@+id/splash_button_multiplayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/mySplashRed"
+                    android:textColor="@color/myMainTextColor" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/splash_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/splash_button_highscore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/mySplashYellow"
+                    android:textColor="@color/myMainTextColor" />
+
+                <Button
+                    android:id="@+id/splashbutton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/mySplashBlue"
+                    android:textColor="@color/myMainTextColor" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/splashmain_fab"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginEnd="20dp"
+        app:backgroundTint="@color/myLightGray"
+        app:layout_anchor="@id/splash_top_layout"
+        app:layout_anchorGravity="bottom|center" >
+
+        </android.support.design.widget.FloatingActionButton>
+    <app.simone.shared.styleable.SimoneTextView
+        android:layout_height="wrap_content"
+        android:id="@+id/splash_simone_textview"
+        android:layout_width="wrap_content"
+        android:text="@string/center_button_default_text"
+        android:elevation="6dp"
+        android:textSize="64sp"
+        android:textColor="@color/myDarkGray"
+        app:layout_anchor="@id/splash_top_layout"
+        app:layout_anchorGravity="bottom|center"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
